@@ -45,7 +45,7 @@ const validateScheme = (req, res, next) => {
       !scheme_name.trim()    
     ) {
     next({
-      status: 404,
+      status: 400,
       message: 'invalid scheme_name'
     })
   } else {
